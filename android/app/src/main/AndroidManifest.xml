@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tbbass.ir">
+
+    <application
+        android:label="TB BASS IR"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- ABRIR POR LINK -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tbbass"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+</manifest>
