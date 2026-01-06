@@ -9,7 +9,7 @@
             android:name=".MainActivity"
             android:exported="true">
 
-            <!-- ABRIR POR LINK -->
+            <!-- ABRIR PELO LINK -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -18,6 +18,9 @@
             </intent-filter>
 
         </activity>
+
+        <!-- TELA DE LISTA DE IRS -->
+        <activity android:name=".IRListActivity"/>
 
     </application>
 </manifest>
